@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Thông Tin Người Dùng</title>
+    <link rel="stylesheet" href="them_tai_khoan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="sidebar">
+    <div class ="logo"></div>
+    <ul class ="main">
+        <li class="active">
+            <a href="admin.html">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Bảng điều khiển</span>
+            </a>
+        </li>
+        <li>
+            <a href="infor_user.html">
+                <i class="fas fa-user"></i>
+                <span>Quản Lí Người Dùng</span>
+            </a>
+        </li>
+        <!-- <li>
+            <a href="#">
+                <i class="fas fa-chart-line"></i>
+                <span>Phân Tích</span>
+            </a>
+        </li> -->
+        <li>
+            <a href="chuc_nang.html">
+                <i class="fas fa-space-shuttle"></i>
+                <span>Quản Lí Sản Phẩm</span>
+            </a>
+        </li>
+        <li>
+            <a href="đơn_hàng_của_khách.html">
+                <i class="fas fa-users-cog"></i>
+                <span>Quản Lí Đơn Hàng Của Khách</span>
+            </a>
+        </li>
+        <li>
+            <a href="thống_kê.html">
+                <i class="fas fa-globe"></i>
+                <span>Thống Kê</span>
+            </a>
+        </li>
+        <li class="logout">
+            <a href="index.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span> Thoát </span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="main-content">
+<div class="header-wrapper">
+    <div class="header-title">
+        
+
+<h2><img src="logo1.jpg" alt=""></h2>
+</div>
+<div class="use--info">
+    <div class="seacher--box">
+        <!-- <i class="fas fa-search"></i>
+        <input type=" text" placeholder="Tìm Kiếm" style="width: 200px; height: 25px; padding: 5px;"> -->
+    </div>
+    <div class="av">
+    <!-- <h1 style="padding: 10px;"><img src="1avatar.jpg" alt="ảnh đại diện"></h1> -->
+    <img src="1avatar.jpg" alt="ảnh đại diện"><br> <b>Việt Hưng Đạt</b>
+
+    <!-- <i  class="fas fa-user-tie"><a href="css-form-login-show-hide-password-master/"><u style="color: black;">Log in</u></a> </i> -->
+    
+    </div>
+</div>
+</div>
+<div class="section">
+    <span> <h1>Thêm Tài Khoản</h1></span>
+    <span class="avatar"><h1>Thêm Ảnh</h1></span>
+</div>
+ <div class="khung">
+    
+    
+    <table>
+        <tr>
+            <td>
+                <label for="text">Tên Đăng Kí : </label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <input type="text" id="text" name="text">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="text">Nhập Mật Khẩu : </label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <!-- <input type="text" id="text" name="text"> -->
+                    <input type="password" id="passwordInput" name="passwordInput">                   
+                    <!-- <i style="margin-left: 50%; cursor: pointer;" id="showPassword" class="fas fa-eye"></i> -->
+                </span>
+            </td>
+        </tr>
+
+        
+
+        <tr>
+            <td>
+                <label for="text">Mật Lại Khẩu : </label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <!-- <input type="text" id="text" name="text"> -->
+                    <input type="password" id="" name="">                   
+                    <!-- <i style="margin-left: 50%; cursor: pointer;" id="showPassword" class="fas fa-eye"></i> -->
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="text">Tên : </label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <input type="text" id="text" name="text">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="text">Số điện thoại : </label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <input type="text" id="text" name="text">
+                    <!-- <input type="checkbox" name="Thêm" id="thêm"> thêm -->
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="text">Email:</label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <input type="text" id="text" name="text">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="text">Tuổi:</label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <input type="text" id="text" name="text">
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="text">Địa chỉ:</label>
+            </td>
+            <td>
+                <span class="custom-span">
+                    <input type="text" id="text" name="text">
+                    
+                </span>
+            </td>
+        </tr>
+        
+    </table>
+ 
+    <div class="u">
+        <!-- <a href="#"class="Xóa">Xóa Sản Phẩm</a> -->
+        <p id="demo"></p>
+        <button style="width: 123px;
+        height: 40px;
+        background-color: #CC99FF;
+        color:black;
+        border-radius: 10px;
+        cursor: pointer;" type="button" onclick="abc()">Đăng Kí</button>
+        <script>
+            function abc(){
+                if(confirm("Bạn Đã Đăng Kí Thành Công!!")==true){
+                    // document.getElementById("demo").innerHTML="Bạn đã xóa thành công";
+                    window.location.href="infor_user.html"
+                }else{
+                        window.location.href="";
+                    }
+                }
+            
+        </script>
+    </div>
+
+<!-- <label for="text">Check me</label> -->
+ </div>
+
+<div class="aside">
+    <!-- <table>
+        <tr>
+            <td>
+              <i style="padding: 7rem;font-size: 4rem; " class="fas fa-plus"> </a></i>
+            
+            </td>
+        </tr>
+       
+    </table> -->
+    <div style="display: flex;height: 363px;
+    width: 304px; border: 1px solid black; margin-left: 20%;" class="khung">
+        <div class="preview active" data-target="p1" >
+            <!-- <input type="file" id="file_anh" accept=".jpg,.jpeg, .png"> -->
+            <!-- <a href="chuc_nang.html"><i class="fas fa-undo-alt"></i></a> -->
+            <a href=""><table>
+                <tr>
+                    <td>
+                      
+                      <label for="fileInput" class="file-input-label">
+                        <!-- <i style="font-size: 100px;text-align: center;margin-left: 117%;" class="fas fa-plus"></i>  -->
+                        <!-- <i style="font-size: 100px; text-align: center; margin-right: 10%;" class="fas fa-plus"></i> -->
+<i style="padding: 7rem;font-size: 4rem; background-color:#fff; font-size: 86px; text-align: center; cursor: pointer;" class="fas fa-plus"> </a></i>
+                        <input type="file" id="fileInput" accept=".jpg, .jpeg, .png"> 
+                    </td>
+                </tr>  
+               
+            </table></a>
+            <p style="margin-left: 45px; font-size: 14px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 70px;">Thêm ảnh </p>
+            </div>
+
+</div>
+    
+</div>
+</div>  
+</div>
+</body>
+</html>

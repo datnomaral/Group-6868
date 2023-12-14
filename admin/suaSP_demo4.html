@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="thêm trang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <div class="sidebar">
+    <div class ="logo"></div>
+    <ul class ="main">
+        <li class="active">
+            <a href="admin.html">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Bảng điều khiển</span>
+            </a>
+        </li>
+        <li>
+            <a href="infor_user.html">
+                <i class="fas fa-user"></i>
+                <span>Quản Lí Người Dùng</span>
+            </a>
+        </li>
+        <!-- <li>
+            <a href="#">
+                <i class="fas fa-chart-line"></i>
+                <span>Phân Tích</span>
+            </a>
+        </li> -->
+        <li>
+            <a href="chuc_nang.html">
+                <i class="fas fa-space-shuttle"></i>
+                <span>Quản Lí Sản Phẩm</span>
+            </a>
+        </li>
+        <li>
+            <a href="đơn_hàng_của_khách.html">
+                <i class="fas fa-users-cog"></i>
+                <span>Quản Lí Đơn Hàng Của Khách</span>
+            </a>
+        </li>
+        <li>
+            <a href="thống_kê.html">
+                <i class="fas fa-globe"></i>
+                <span>Thống Kê</span>
+            </a>
+        </li>
+        <li class="logout">
+            <a href="index.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span> Thoát </span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="main-content">
+<div class="header-wrapper">
+    <div class="header-title">
+        
+
+<h2><img src="logo1.jpg" alt=""></h2>
+</div>
+<div class="use--info">
+    <div class="seacher--box">
+        <!-- <i class="fas fa-search"></i>
+        <input type=" text" placeholder="Tìm Kiếm" style="width: 200px; height: 25px; padding: 5px;"> -->
+    </div>
+    <div class="av">
+    <!-- <h1 style="padding: 10px;"><img src="1avatar.jpg" alt="ảnh đại diện"></h1> -->
+    <img src="1avatar.jpg" alt="ảnh đại diện"><br> <b>Việt Hưng Đạt</b>
+
+    <!-- <i  class="fas fa-user-tie"><a href="css-form-login-show-hide-password-master/"><u style="color: black;">Log in</u></a> </i> -->
+    
+    </div>
+</div>
+</div>
+<div class="section">
+</div>
+<div style="margin-left: 8.5%; margin-top: 7%;" class="aside">
+    
+    <table>
+        <tr>
+          <td>
+            <!-- Add a wrapper around the image for better control -->
+            <div class="image-wrapper">
+              <div id="imageContainer">
+                <img src="luoiho.jpg" alt="">
+              </div>
+            </div>
+           
+            <p style=" text-align: center; color: #2f80ed; cursor: pointer;"> ảnh thực tế</p>
+            
+            <button onclick="deleteImage()"><i style="cursor: pointer;" class="fas fa-trash-alt" id="11"></i></button>
+            <label for="">Xóa Ảnh </label><br>
+            <!-- <label for="input"> <i style="cursor: pointer;" class="fas fa-plus"></i> Thêm ảnh</label>
+            <input style="display: none;" type="file" name="" id="input" value="jpg"> -->
+          </td>
+        </tr>
+      </table>
+    
+      <script>
+        function deleteImage() {
+          // Lấy tham chiếu đến phần tử chứa ảnh
+          var imageContainer = document.getElementById('imageContainer');
+    
+          // Kiểm tra xem phần tử có tồn tại hay không
+          if (imageContainer) {
+            // Xóa phần tử chứa ảnh
+            imageContainer.remove();
+            // alert("Bạn đã xóa thành công ảnh");
+          } else {
+            console.error('Không tìm thấy phần tử chứa ảnh');
+          }
+        }
+      </script> 
+</div>
+ <div class="khung">
+    <input style="width: 100%;font-weight: 600;
+    color: #bd2026;
+    font-size: 25px;
+    margin-top: 90px;
+    margin-left: 5%;" type="text" name="" id="" value="Cây để bàn - Mochi Lưỡi Hổ - 7740">
+        <div class="single-price">
+            <input style="font-size: 20px;
+            font-weight: 600;
+            color: #bd2026;margin-left: 5%;" type="text" name="" id="" value="270.000 đ">
+            <input type="text" name="" id="" value="">
+        <!-- <p style="margin-left: 5%; font-size: 16px; "><input style="font-size: 16px;width: 100%;"  type="text" name="" id="" value="Giá đã bao gồm 8% VAT - Sản phẩm chưa bao gồm phí giao tân nơi">  </p> -->
+        <h4 style="margin-left: 5%;" >Mô tả </h4>
+        <textarea style="margin-left: 5%;font-size: 16px; width: 684px; height: 220px;"  name="" id="" cols="5" rows="5">
+ - Chậu Mochi lưỡi hổ có đặc điểm đáng chú ý là tán lá rộng và bông hoa nổi bật, màu xanh tươi
+ - Chậu Mochi 10cm           
+ - Chậu Mochi lưỡi hổ cũng có ý nghĩa tượng trưng, hoa của cây Mochi lưỡi hổ được coi là biểu tượng của tình yêu và sự gắn kết gia đình, nó có ý nghĩa làm cây cảnh, có giá trị y học và mang ý nghĩa tượng trưng trong một số văn hóa</textarea>
+            </div>
+        <div class="u">
+        <!-- <a href="#"class="Xóa">Xóa Sản Phẩm</a> -->
+        <p id="demo"></p>
+        <a href="suaSP_demo4.html"><button style="width: 123px;
+        height: 40px;
+        background-color: #CC99FF;
+        color:black;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 8%;" type="button" onclick="abc()">Cập Nhật</button></a>
+        
+        <script>
+            function abc(){
+                if(confirm("Bạn Đã Cập Nhật thành công!!")==true){
+                    // document.getElementById("demo").innerHTML="Bạn đã xóa thành công";
+                    window.location.href="chuc_nang.html"
+                }else{
+                        window.location.href="";
+                    }
+                }
+            
+        </script>
+    </div>
+
+<!-- <label for="text">Check me</label> -->
+ </div>
+</div>  
+</div>
+</body>
+</html>

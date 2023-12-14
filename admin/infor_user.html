@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER!!!!.Hung.Viet.Dat1</title>
+    <link rel="stylesheet" href="style_user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="sidebar">
+    <div class ="logo"></div>
+    <ul class ="main">
+        <li class="active">
+            <a href="admin.html">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Bảng điều khiển</span>
+            </a>
+        </li>
+        <li>
+            <a href="infor_user.html">
+                <i class="fas fa-user"></i>
+                <span>Quản Lí Người Dùng</span>
+            </a>
+        </li>
+        <!-- <li>
+            <a href="#">
+                <i class="fas fa-chart-line"></i>
+                <span>Phân Tích</span>
+            </a>
+        </li> -->
+        <li>
+            <a href="chuc_nang.html">
+                <i class="fas fa-space-shuttle"></i>
+                <span>Quản Lí Sản Phẩm</span>
+            </a>
+        </li>
+        <li>
+            <a href="đơn_hàng_của_khách.html">
+                <i class="fas fa-users-cog"></i>
+                <span>Quản Lí Đơn Hàng Của Khách</span>
+            </a>
+        </li>
+        <li>
+            <a href="thống_kê.html">
+                <i class="fas fa-globe"></i>
+                <span>Thống Kê</span>
+            </a>
+        </li>
+        <li class="logout">
+            <a href="index.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span> Thoát </span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="main-content">
+<div class="header-wrapper">
+    <div class="header-title">
+        
+
+<h2><img src="logo1.jpg" alt=""></h2>
+</div>
+<div class="use--info">
+    <div class="seacher--box">
+        <!-- <i class="fas fa-search"></i>
+        <input type=" text" placeholder="Tìm Kiếm" style="width: 200px; height: 25px; padding: 5px;"> -->
+    </div>
+    <div class="av">
+    <!-- <h1 style="padding: 10px;"><img src="1avatar.jpg" alt="ảnh đại diện"></h1> -->
+    <img src="1avatar.jpg" alt="ảnh đại diện"><br> <b>Việt Hưng Đạt</b>
+
+    <!-- <i  class="fas fa-user-tie"><a href="css-form-login-show-hide-password-master/"><u style="color: black;">Log in</u></a> </i> -->
+    
+    </div>
+</div>
+</div>
+
+        <div class="tabular-wrapper">
+            <h3 class="main-title">Dữ Liệu Người Dùng</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ngày Đăng Kí</th>
+                            <th>Ngày Đăng Nhập</th>   
+                            <th>Thông Tin Người Dùng</th>
+                            <th>Sửa Thông Tin Người Dùng</th>
+                            <!-- <th>Thêm Thông Tin Người Dùng</th> -->
+                            <th style="text-align: center;">Trạng Thái Người Dùng</th> 
+                                                     
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>1-1-2023</td>
+                                <td>1-1-2023</td>
+                                <td> <button> <a href="NguyenThiCong.html">Nguyễn Thành Việt</a></button></td>
+                                <td> <button> <a href="Anguyenthanhviet.html">Nguyễn Thành Việt</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Nguyễn Thành Việt </a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green; text-align: center;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="infor_user.html"
+                            }else{
+                                    window.location.href="";
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>17-12-2023</td>
+                                <td>18-12-2023</td>
+                                <td> <button> <a href="NguyenThanhDat.html">Nguyễn Thành Đạt</a></button></td>
+                                <td> <button> <a href="Anguyenthanhdat.html">Nguyễn Thành Đạt</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Nguyễn Thành Đạt </a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="infor_user.html"
+                            }else{
+                                    window.location.href="";
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>10-1-2023</td>
+                                <td>10-1-2023</td>
+                                <td> <button> <a href="TrungHieu.html">Nguyễn Thành Trung Hiếu</a></button></td>
+                                <td> <button> <a href="Acoconcac.html">Nguyễn Thành Trung Hiếu</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Nguyễn Thành Trung Hiếu </a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="infor_user.html"
+                            }else{
+                                    window.location.href="";
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>1-12-2023</td>
+                                <td>2-12-2023</td>
+                                <td> <button> <a href="NguyenA.html">Đặng Quốc Đông Quân</a></button></td>
+                                <td> <button> <a href="Adangquocdongquan.html">Đặng Quốc Đông Quân</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Hồ Công Lý</a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="infor_user.html"
+                            }else{
+                                    window.location.href="";
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>10-1-2023</td>
+                                <td>10-1-2023</td>
+                                <td> <button> <a href="NguyenCo.html">Trần Minh Quân</a></button></td>
+                                <td> <button> <a href="Aminhquan.html">Trần Minh Quân</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Hồ Nguyên Trung</a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="infor_user.html"
+                            }else{
+                                    window.location.href="";
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2-8-2023</td>
+                                <td>2-8-2023</td>
+                                <td> <button> <a href="NguyenHung.html">Lê Đức Anh</a></button></td>
+                                <td> <button> <a href="Aleducanh.html">Lê Đức Anh</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Nguyễn Thành Ngô </a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="infor_user.html"
+                            }else{
+                                    window.location.href="";
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>21-11-2023</td>
+                                <td>21-21-2023</td>
+                                <td> <button> <a href="thông tin user.html">Trương Lê Gia Hưng</a></button></td>
+                                <td> <button> <a href="sửa.html">Trương Lê Gia Hưng</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Ngô Bá Khá</a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="them_Tai_Khoan.html"
+                            }else{
+                                    window.location.href="";
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2-11-2023</td>
+                                <td>3-11-2023</td>
+                                <td> <button> <a href="NguyenThanhViet.html">Đặng Hùng Phúc</a></button></td>
+                                <td> <button> <a href="Adangphuc.html">Đặng Hùng Phúc</a></button></td>
+                                <!-- <td><button> <a href="trang thêm.html">Phùng Thị Bích Ngọc</a></button></td> -->
+                                <td>
+                             <p id="demo"></p>
+                             <p style="color:green;">Khóa<input type="checkbox" onclick="abc()"></p>
+                            <script>
+                                function abc(){
+                            if(confirm("Bạn đã Khóa thành công người dùng này!!")==false){                           
+                                window.location.href="infor_user.html"
+                            }else{
+                                    
+                                }
+                            }
+                                </script>
+                                </td>                     
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="6">
+                                    <button style="border: 2px solid black; padding: 6px;"> <p style="font-size: 16px; "> <a style="text-decoration: none;" href="them_Tai_Khoan.html">Thêm Tài Khoản</a></p> </button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </thead>
+                </table>
+            </div>
+    </div>
+   
+</div>  
+</div>
+</body>
+</html>
