@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(255, 140, 0, 1);
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.logo{
+ height: 80px;
+ padding: 16px;   
+}
+.main{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+
+}
+.main li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all , 0.5s ease-in-out;
+}
+.main li:hover,
+.active{
+    background-color: rgb(25, 75, 119);
+
+}
+.main a {
+   color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.main a span {
+    overflow: hidden;
+
+}
+/* .main a i{
+    font-size: 1.2rem;
+} */
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.main-content{
+    position: relative;
+    background: #fff;
+    width:100% ;
+    padding: 0rem;
+  
+}
+.header-wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.header-title h2 img{
+    width: 200px;
+    height: 70px;
+    cursor:auto;
+    border-bottom: 1000px;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    background: rgba(255, 140, 0, 1);
+    /* border-radius: 10px; */
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header-title{
+    color:black;
+}
+.use--info{
+ display: flex; 
+ align-items: center;
+ gap: 1;  
+}
+
+.av{
+    padding: 10px;
+    
+}
+.seacher--box{
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    color: rgb(14, 15, 15);
+    align-items: center;
+    gap:10px;
+}
+.section{
+    padding: 10px;
+    float: right;
+    width: 89%;
+    color: black;
+}
+.khung{
+    float: left;
+    width: 50%;
+}
+.custom-span {
+    padding: 10px;
+    border: 1px solid black;
+    width: 450px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.update{
+    position: fixed;
+    padding: 2rem;
+    right: 850px; 
+   
+}
+.update button{   
+    color: blueviolet;
+    border-radius: 5px;
+    width: 71px;
+    height: 42px;
+    
+}
+.aside{
+    float: left;
+    width: 50%;
+    min-height: 400px;
+    
+}
+.aside{
+    width: 300px;
+    /* Set other styling properties for the frame */
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* padding: 10px;
+    border: 1px solid black;
+    width: 400px;
+    min-height: 300px;  
+    margin-left: 10%; 
+    float: left;
+    width: 21%; */
+}
+.aside img{
+    width: 277px;
+    height: 326px;
+    display: block;
+       
+
+}
+.avatar{
+    padding: 10px;
+    float: right;
+    width: 46%;
+    color: black;
+}
+.u{
+    margin-left: 60%;
+    padding-top: 40px
+    
+}

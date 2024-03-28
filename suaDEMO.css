@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(255, 140, 0, 1);
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.logo{
+ height: 80px;
+ padding: 16px;   
+}
+.main{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+
+}
+.main li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all , 0.5s ease-in-out;
+}
+.main li:hover,
+.active{
+    background-color: rgb(25, 75, 119);
+
+}
+.main a {
+   color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.main a span {
+    overflow: hidden;
+
+}
+/* .main a i{
+    font-size: 1.2rem;
+} */
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.main-content{
+    position: relative;
+    background: #fff;
+    width:100% ;
+    padding: 0rem;
+  
+}
+.header-wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.header-title h2 img{
+    width: 200px;
+    height: 70px;
+    cursor:auto;
+    border-bottom: 1000px;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    background: rgba(255, 140, 0, 1);
+    /* border-radius: 10px; */
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header-title{
+    color:black;
+}
+.use--info{
+ display: flex; 
+ align-items: center;
+ gap: 1;  
+}
+
+.av{
+    padding: 10px;
+    
+}
+.seacher--box{
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    color: rgb(14, 15, 15);
+    align-items: center;
+    gap:10px;
+}
+/**card-container**/
+.card-container{
+    background-color: #e9e7e7;
+    padding:1.5rem;
+    border-radius: 10px;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.main-title{
+    color:  rgba(255, 140, 0, 1);
+   padding-bottom: 20px;
+   font-size:20px;
+}
+.payment-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5rem;
+    width: 1230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;   
+}
+.card-container_1{
+    background-color:white;
+    border-radius: 10px;
+    padding: 5rem;
+    width: 1230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;   
+}
+.card-container_2{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5rem;
+    width: 1230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;   
+}
+
+.payment-card{
+    margin-top: 1rem;
+}
+.payment-card:hover{
+    transform: translateY(-19px);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+} 
+.amount-value img{
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    width: 233px;
+    height: 190px;
+
+}
+.amount{
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    font-size: 12px;
+    font-weight: 200;
+}
+/* chi tiết sản phẩm */
+.card-detail{
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: unset;
+   
+}
+/* color css */
+.light-red{
+    background-color:#FFCC33 ;
+}
+.light-red1{
+    background-color: #FFCC33;
+
+}
+.light-red2{
+    background-color: #FFCC33;
+}
+.light-red3{
+    background-color: #FFFF66;
+    
+}
+/* tabular selection*/
+.tabular-wrapper{
+background-color: #e9e7e7;
+padding: 2rem;
+margin-top: 1rem;
+border-radius: 10px;
+}
+.table-container{
+   width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: #FFCC33;
+    color: black;
+}
+th{
+    padding: 15px;
+    text-align: left;
+}
+tbody{
+background: #7777;
+
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: black;
+}
+tr:nth-child(even){
+   background: #FFCC33;
+
+}
+tfoot{
+    padding :15px;
+    color: #FFCC33;
+    background-color: #FFCC33;
+}
+.table-container button{
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+.card-detail-anh{
+    width: 100%;
+    height: auto;
+}
+/* chỉnh ảnh và chức năng*/
+/* .anhdemo{
+    font-family:'Nunito',sans-serif ;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    transition: all .1s linear;
+    text-transform: capitalize;
+} */
+.anhdemo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(23rem,1fr));
+    gap: 2rem;
+}
+.anh1{
+float: left;
+width: 25%;
+}
+/* .anh1 img{
+    width: 190px;
+    height: 190px;
+}
+.anh1 figure{
+    text-align: center;
+} */
+.title{
+    font-size: 3.5rem;
+    color: #FFCC33;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.anhdemo .anh{
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgb(110, 110, 110);
+    outline-offset: -1.5rem;
+    cursor: pointer;
+
+} 
+.anhdemo .anh:hover{
+    outline: .2rem solid #222;
+    /* outline-offset: 0; */
+}
+.anh img{
+    height: 25rem;
+}
+.anh:hover img{
+    transform: scale(.9);
+}
+.anh h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem.0;
+    font-size: 1rem;
+    color: #111;
+}
+.anh .price{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem.0;
+    font-size: 1.2rem;
+    color: #111;  
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx ảnh 6 plus thêm sản phẩm*/
+.anh6 img{
+    /* display: flex; */
+    border-radius: 10px;
+    width: 300px;
+    height: 355px;
+    
+}
+
+.left{
+    float: left;
+    width: 48%;
+    min-height: 400px;
+}
+.left{
+    /* background-color: #FFCC33; */
+}
+
+.right{
+    float: right;
+    width: 48%;
+    min-height: 400px; 
+}
+.right{
+    /* background-color: aqua; */
+}
+
+ .preview{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 30rem;
+}
+ .preview.active{
+    display: inline-block;
+}
+ .preview:hover img{
+    transform: scale(.9);
+}
+ .preview .fa-undo-alt{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    cursor: pointer;
+    transform: scaleX(-1);
+    
+}
+ .preview h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem.0;
+    font-size: 1.4rem;
+    color: #111;
+}
+.preview .price{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem.0;
+    font-size: 1.2rem;
+    color: #111;  
+}
+.preview p{
+    font-size: 12px;
+    inset: 10px;
+}
+.right .form-group{
+    padding: 7px;
+    /* padding: 8px 30px 8px 10px;  */
+    /* Điều chỉnh padding để có khoảng trắng thoải mái */
+    border: 1px solid #0f0f0f;
+    /* border-radius: 20px; */
+    outline: none;
+    
+}
+/* .right .wrapper{
+    position: relative;
+    display: inline-block;
+} */
+.wrapper{
+    padding-top: 25px;
+}
+.form-group-update button{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(219, 204, 232);
+    border-radius: 10px;
+   
+    
+}
+.form-group-update{
+    float: right;
+    width: 68%;
+    margin-top: -20px;
+}
+.form-group-update{
+
+}
+
+label.file-input-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: white;
+    color: #111;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 330px;
+    width: 280px;
+}
+input[type="file"] {
+    display: none;
+}
+
